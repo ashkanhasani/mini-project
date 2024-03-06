@@ -7,17 +7,20 @@
     <title>Document</title>
 </head>
 <body class="flex flex-rows justify-center">
-    <div class="w-[300px] h-[300px] text-center bg-slate-200 drop-shadow-2xl shadow-2xl shadow-black/75 ">
+    <div class="w-[300px] h-[350px] text-center bg-slate-200 drop-shadow-2xl shadow-2xl shadow-black/75 ">
         <h1 class="text-4xl pt-3">Tempeture Coversing</h1>
         <form action="" id="formbox" class="mt-4 ">
             <label for="quantity" id="templable" class=""> your Tempeture</label><br>
-            <input type="number" id="quantity" name="quantity" class="mt-1  border-2 border-green-200 rounded-full  drop-shadow-2xl text-center mb-2" id="tempeture"><br>
-            <input type="radio" name="direction" id="c2f" value="celisus" >
+            <input type="number" id="quantity" value="0" class="mt-1  border-2 border-green-200 rounded-full  drop-shadow-2xl text-center mb-2" id="tempeture"><br>
+            <input type="radio" name="direction" id="c2f" >
             <label for="c2f">celisus to farenhite</label><br>
-            <input type="radio" name="direction" id="f2c" value="farenhite">
+            <input type="radio" name="direction" id="f2c">
             <label for="f2c">farenhit to celisus</label><br>
-            <input type="submit" id="submit" value="submit" class="border-2 border-red-600 bg-red-400 hover:drop-shadow-2xl hover:shadow-2xl hover:text-lg p-2 mt-4 rounded-full">
+            <button type="button" onclick="convert()" class="border-2 border-red-600 bg-red-400 hover:drop-shadow-2xl hover:shadow-2xl  p-2 mt-4 rounded-full">submit</button>
+            <p id="result" class="pb-2 mt-2 text-xl "></p>
         </form>
+        
     </div>
+    <script src="temperatureConerting.js"></script>
 </body>
 </html>
